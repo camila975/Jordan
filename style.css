@@ -20,10 +20,10 @@ ul{
 /* encabezado */
 .header {
     display: flex;
-    justify-content: space-between; /* Logo a la izq, menú a la der */
+    justify-content: space-between; 
     align-items: center;
-    padding: 0 40px; /* margen interno */
-    background-color: #222; /* fondo oscuro */
+    padding: 0 40px; 
+    background-color: #222; 
   }
   
   .logo {
@@ -72,30 +72,6 @@ nav ul li a {
     text-decoration: none;
 }
 
-/* Submenú oculto por defecto */
-.submenu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.submenu li a {
-    padding: 10px 20px;
-    color: white;
-    text-decoration: none;
-}
-
-/* Mostrar submenú cuando el mouse está sobre el elemento principal */
-nav ul li:hover .submenu {
-    display: block;
-}
-
-
-    
 header .resaltado, header .actual a{
     color: #1293d4;
     font-weight: bold;
@@ -119,30 +95,30 @@ header .resaltado, header .actual a{
 }
 
 .header {
-    background-color: #222; /* o el color que estés usando */
+    background-color: #222; 
     padding: 20px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 4px solid #00baff; /* Esto es la línea azul */
+    border-bottom: 4px solid #00baff;
   }
   
 /* Cajas */ 
 .contenedor {
     display: flex;
-    justify-content: center; /* Centra las imágenes horizontalmente */
-    align-items: center; /* Alinea verticalmente */
-    gap: 50px; /* Espacio entre imágenes */
+    justify-content: center; 
+    align-items: center; 
+    gap: 50px; 
     padding-top: 10px;
 }
 
 .elemento {
     text-align: center;
-    max-width: 200px; /* Ajusta el tamaño de los elementos */
+    max-width: 200px; 
 }
 
 .elemento img {
-    width: 100px; /* Tamaño de la imagen */
+    width: 100px;
     height: auto;
 }
 
