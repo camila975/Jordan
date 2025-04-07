@@ -1,0 +1,413 @@
+*body{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    background-color: #0f0320;
+}
+/* estilos globales  */
+.contenedor{
+    width: 1300px;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* encabezado */
+.header {
+    display: flex;
+    justify-content: space-between; /* Logo a la izq, menú a la der */
+    align-items: center;
+    padding: 0 40px; /* margen interno */
+    background-color: #222; /* fondo oscuro */
+  }
+  
+  .logo {
+    color: #00aaff;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .menu ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 30px;
+  }
+  
+  .menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+  }
+
+  .menu a.activo {
+    color: #00baff; /* azul como la línea */
+    border-bottom: 2px solid #00baff;
+    padding-bottom: 5px;
+  }
+  
+/* Estilos para el menú principal */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Submenú oculto por defecto */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.submenu li a {
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Mostrar submenú cuando el mouse está sobre el elemento principal */
+nav ul li:hover .submenu {
+    display: block;
+}
+
+
+    
+header .resaltado, header .actual a{
+    color: #1293d4;
+    font-weight: bold;
+}
+  
+/* cabecera con imagen */
+#cabecera{
+    min-height: 400px;
+    background: url("../Jordan/cabecera.png");  
+    background-repeat: no-repeat;
+    background-size: 1400px 400px;
+    text-align: center;
+    color: #fff;
+}
+#cabecera h1{
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding-left: 39px;
+}
+
+.header {
+    background-color: #222; /* o el color que estés usando */
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 4px solid #00baff; /* Esto es la línea azul */
+  }
+  
+/* Cajas */ 
+.contenedor {
+    display: flex;
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    align-items: center; /* Alinea verticalmente */
+    gap: 50px; /* Espacio entre imágenes */
+    padding-top: 10px;
+}
+
+.elemento {
+    text-align: center;
+    max-width: 200px; /* Ajusta el tamaño de los elementos */
+}
+
+.elemento img {
+    width: 100px; /* Tamaño de la imagen */
+    height: auto;
+}
+
+/* Estilos básicos para el formulario */
+form {
+    width: 300px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Estilo para las estrellas */
+.stars {
+    display: flex;
+    justify-content: space-between;
+    width: 180px;
+}
+
+.star {
+    width: 30px;
+    height: 30px;
+    background-color: #ccc;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+/* Cambiar el color cuando se selecciona */
+input[type="radio"]:checked ~ .stars .star {
+    background-color: gold;
+}
+
+/* Efecto al pasar el mouse sobre las estrellas */
+.star:hover,
+.star:hover ~ .star {
+    background-color: gold;
+}
+.products {
+    padding: 40px 0;
+    background-color: white;
+}
+
+.products h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-card h3 {
+    margin: 15px 0;
+    font-size: 1.5rem;
+}
+
+.product-card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.product-card span {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.product-card button {
+    padding: 10px 20px;
+    background-color: #1293b4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.product-card button:hover {
+    background-color: #1293b4;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+    background-color: #f3f3f5;
+}
+.hero-content h2 {
+    font-size: 2.5rem;
+    color: #1293d4;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: #2d2d2e;
+    line-height: 1.8;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+}
+
+.valores {
+    padding: 60px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    background-color: #f4f4f9;
+  }
+  
+  .valor-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .valor-box:hover {
+    transform: translateY(-5px);
+  }
+  
+  .valor-box img {
+    width: 80px;
+    margin-bottom: 20px;
+  }
+  
+  .valor-box h3 {
+    font-size: 1.5rem;
+    color: #1293d4;
+    margin-bottom: 15px;
+  }
+  
+  .valor-box p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  footer {
+    background-color: #1293d4;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.95rem;
+  }
+  .vision {
+    padding: 60px 0;
+    background-color: #f4f4f9;
+  }
+  
+  .vision-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 60px;
+  }
+  
+  .vision-text {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .vision-text h2 {
+    color: #1293d4;
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  
+  .vision-text p {
+    margin-bottom: 20px;
+  }
+  
+  .vision-image {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .vision-image img {
+    width: 80%;
+    max-width: 300px;
+  }
+  
+  .vision-boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+  }
+  
+  .vision-box {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    text-align: center;
+    transition: transform 0.2s ease;
+  }
+  
+  .vision-box:hover {
+    transform: translateY(-5px);
+  }
+  
+  .vision-box h3 {
+    color: #1293d4;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+  }
+  
+  .vision-box p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  footer {
+    background-color: #1293d4;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+  }
+
+/* footer o pie de pagina */
+footer{
+    padding: 20px;
+    margin-top: 20px;
+    color: #fff;
+    background-color: #1293d4;
+    text-align: center;
+} 
+
